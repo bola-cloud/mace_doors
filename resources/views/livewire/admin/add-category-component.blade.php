@@ -14,7 +14,7 @@
           </div>
           <div class="card-content collapse show">
               <div class="card-body">
-                  <form class="form" wire:submit.prevent="add_service">
+                  <form class="form" wire:submit.prevent="add_service" enctype="multipart/form-data">
 
                       <!-- English Fields -->
                       <h4 class="form-section"><i class="ft-user"></i> English Info</h4>

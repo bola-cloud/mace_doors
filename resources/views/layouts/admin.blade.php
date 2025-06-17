@@ -36,6 +36,8 @@
   <!-- BEGIN Custom CSS-->
   <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
   <!-- END Custom CSS-->
+
+  @livewireStyles
 </head>
 <body class="vertical-layout vertical-content-menu 2-columns   menu-expanded fixed-navbar"
 data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
@@ -417,6 +419,7 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
       <span class="float-md-right d-block d-md-inline-blockd-none d-lg-block">Hand-crafted & Made with <i class="ft-heart pink"></i></span>
     </p>
   </footer>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <!-- BEGIN VENDOR JS-->
   <script src="{{asset('app-assets/vendors/js/vendors.min.js')}}" type="text/javascript"></script>
   <!-- BEGIN VENDOR JS-->
@@ -437,5 +440,6 @@ data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
   <!-- BEGIN PAGE LEVEL JS-->
   <script src="{{asset('app-assets/js/scripts/pages/dashboard-ecommerce.js')}}" type="text/javascript"></script>
   <!-- END PAGE LEVEL JS-->
+  @livewireScripts
 </body>
 </html>

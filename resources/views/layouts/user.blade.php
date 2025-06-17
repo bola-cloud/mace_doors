@@ -50,6 +50,14 @@
             left: 0;
         }
     </style>
+      @if (app()->getLocale() == 'ar')
+        <style>
+            .dropdown-menu-multi-column {
+                right: -700px !important;
+                left: auto !important;
+            }
+        </style>
+    @endif
 
 </head>
 

@@ -101,7 +101,7 @@
         </div>
     @endforeach
 
-    <livewire:user.items.smart-home-component />
+    {{-- <livewire:user.items.smart-home-component /> --}}
     <livewire:user.items.horizontalslider-component />
 
     <!-- Testimonial Start -->

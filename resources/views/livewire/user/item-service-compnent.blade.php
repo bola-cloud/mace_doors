@@ -92,7 +92,7 @@
                     </div>
 
 
-                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+                    {{-- <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
                         <div class="section-title section-title-sm position-relative pb-3 mb-4">
                             <h3 class="mb-0">Tag Cloud</h3>
                         </div>
@@ -110,7 +110,7 @@
                             <a href="" class="btn btn-light m-1">SMART HOME</a>
                             <a href="" class="btn btn-light m-1">Website</a>
                         </div>
-                    </div>
+                    </div> --}}
 
 
                 </div>

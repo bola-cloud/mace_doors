@@ -58,7 +58,7 @@ class AddCategoryComponent extends Component
         // Upload image and save file name to en_desc_3
         if ($this->photo) {
             $imageName = uniqid() . '.' . $this->photo->getClientOriginalExtension();
-            $this->photo->storeAs('public/user/photos', $imageName);
+            $this->photo->storeAs('user/photos', $imageName, 'public'); // saves in public/user/photos
             $service->en_desc_3 = $imageName;
         }
 

@@ -2,8 +2,8 @@
     width: 80vw;
     max-height: 90vh;
     overflow-y: auto;
-    right: -43px;
-    left: auto;
+    right: auto;
+    left: -800px;
     height: auto;
     position: absolute;
 
