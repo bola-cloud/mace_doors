@@ -9,6 +9,7 @@
     <meta name="keywords" content="Mace Doors, Sliding Door,  Swing Door ,  Gate Barrier, Access Control">
 
     <link rel="canonical" href="{{ canonical() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <meta property="og:title" content="Mace Doors | Sliding Door | Swing Door | Gate Barrier | Access Control">
     <meta property="og:description" content="Mace Doors leads the Middle East in revolving, sliding, and swing doors, gate barriers, and entrance automation. Trusted in Egypt, UAE, and beyond for innovative and reliable access control solutions.">
@@ -58,6 +59,7 @@
             }
         </style>
     @endif
+    @livewireStyles
 
 </head>
 
@@ -283,6 +285,9 @@
 
     <!-- Template Javascript -->
     <script src="{{asset('user/js/main.js')}}"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script> {{-- ✅ Required for Livewire v3 --}}
+
+    @livewireScripts
 </body>
 
 </html>

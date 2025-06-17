@@ -57,7 +57,7 @@
                     @endif
 
                     <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form wire:submit="add_quote">
+                        <form wire:submit.prevent="add_quote">
                             <div class="row g-3">
                                 <div class="col-xl-12">
                                     <input type="text" class="form-control bg-light border-0" placeholder="{{ __('lang.your_name') }}" style="height: 55px;" wire:model="name">
@@ -72,7 +72,7 @@
                                     <select class="form-select bg-light border-0" style="height: 55px;" wire:model="service">
                                         <option selected>{{ __('lang.select_service') }}</option>
                                         @foreach ($services as $service)
-                                            <option value="{{ $service->name_service }}">{{ $service->name_service }}</option>
+                                            <option value="{{ $service->en_name_service }}">{{ app()->getLocale() == 'ar' ? $service->ar_name_service : $service->ar_name_service  }}</option>
                                         @endforeach
                                     </select>
                                 </div>

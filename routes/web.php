@@ -54,12 +54,12 @@ Route::group(
         Route::get('/frde/quotes',ShowQuoteComponent::class)->name("quotes_component");
         Route::get('frde/edit_service/{id_service}',EditServiceComponent::class)->name('edit_service');
         Route::get('/frde/addblog',AddBlogComponent::class)->name("add_blog");
-        
+
         ////user
         Route::get('/',HomeComponent::class)->name('user_home');
         Route::get('services',ServicesComponent::class)->name('services');
-        
-        
+
+
         Route::get('typeservice/{service_id}',TypeServiceComponent::class)->name('type_service');
         Route::get('freequote',FreeQuoteComponent::class)->name('freequote');
         Route::get('contact',ContactComponent::class)->name('contact');
@@ -68,8 +68,8 @@ Route::group(
         Route::get('service/{name}',ServiceComponent::class)->name('service_component');
         Route::get('service/{name}/{name_type}',ItemServiceCompnent::class)->name('type_service_component');
         Route::get('blog/{id_blog}',BlogDetailComponent::class)->name('id_blog');
-        
+
         Route::get('iot-development',SmartServicesComponent::class)->name('iotservices');
-        
+
     // Other routes
 });
