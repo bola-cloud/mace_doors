@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restricted Access</title>
+</head>
+<body>
+    <div id="content" style="display: none;">
+        <!-- Your website content here -->
+        <h1>Welcome to Our Site</h1>
+        <p>This content is only available in a specific location.</p>
+    </div>
+    <div id="location-info">
+        <p id="user-location"></p>
+        <p id="access-status"></p>
+    </div>
+    <script>
+        function success(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
+            // Display the user's current location
+            document.getElementById('user-location').textContent = `Your current location: Latitude = ${latitude}, Longitude = ${longitude}`;
+
+            // Coordinates for the specific location (Giza Station)
+            const targetLatitude = 27.177072;
+            const targetLongitude =31.184381;
+            // Allowable range in degrees (you can adjust this value)
+            const allowableRange = 0.000449;
+
+            // Check if the user's location is within the specified range
+            if (Math.abs(latitude - targetLatitude) <= allowableRange &&
+                Math.abs(longitude - targetLongitude) <= allowableRange) {
+                document.getElementById('access-status').textContent = "Access Status: OK";
+                document.getElementById('content').style.display = 'block';
+            } else {
+                document.getElementById('access-status').textContent = "Access Status: Not OK";
+            }
+        }
+
+        function error() {
+            alert("Unable to retrieve your location. Access denied.");
+            document.getElementById('access-status').textContent = "Access Status: Not OK";
+        }
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(success, error);
+        } else {
+            alert("Geolocation is not supported by your browser. Access denied.");
+            document.getElementById('access-status').textContent = "Access Status: Not OK";
+        }
+    </script>
+</body>
+</html>
