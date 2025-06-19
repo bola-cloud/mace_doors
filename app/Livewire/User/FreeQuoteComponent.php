@@ -22,6 +22,7 @@ class FreeQuoteComponent extends Component
 
     public function add_quote()
     {
+        // dd($this->all());
         $this->validate();
         Quote::create([
             'name' => $this->name,

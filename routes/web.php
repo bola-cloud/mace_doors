@@ -61,7 +61,7 @@ Route::group(
 
 
         Route::get('typeservice/{service_id}',TypeServiceComponent::class)->name('type_service');
-        Route::get('freequote',FreeQuoteComponent::class)->name('freequote');
+        Route::get('freequote', FreeQuoteComponent::class)->name('freequote');        
         Route::get('contact',ContactComponent::class)->name('contact');
         Route::get('about',AboutComponent::class)->name('about');
         Route::get('blog',BlogComponent::class)->name('blog');

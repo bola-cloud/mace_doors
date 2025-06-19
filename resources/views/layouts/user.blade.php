@@ -183,7 +183,6 @@
 
         {{$slot}}
 
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp">
         <div class="container">
