@@ -51,14 +51,44 @@
             left: 0;
         }
     </style>
-      @if (app()->getLocale() == 'ar')
-        <style>
-            .dropdown-menu-multi-column {
-                right: -700px !important;
-                left: auto !important;
-            }
-        </style>
+    @if (app()->getLocale() == 'ar')
+    <style>
+        .dropdown-menu-multi-column {
+            right: -700px !important;
+            left: auto !important;
+        }
+
+        .section-title.text-center::before {
+            left: auto !important;
+            right: 50% !important;
+            margin-left: 0 !important;
+            margin-right: -75px !important;
+        }
+
+        .section-title.text-center::after {
+            left: auto !important;
+            right: 50% !important;
+            margin-left: 0 !important;
+            margin-right: -75px !important;
+            -webkit-animation: section-title-run-center-rtl 5s infinite linear !important;
+            animation: section-title-run-center-rtl 5s infinite linear !important;
+        }
+
+        @-webkit-keyframes section-title-run-center-rtl {
+            0% { right: 50% !important; margin-right: -75px !important; }
+            50% { right: 50% !important; margin-right: 45px !important; }
+            100% { right: 50% !important; margin-right: -75px !important; }
+        }
+
+        @keyframes section-title-run-center-rtl {
+            0% { right: 50% !important; margin-right: -75px !important; }
+            50% { right: 50% !important; margin-right: 45px !important; }
+            100% { right: 50% !important; margin-right: -75px !important; }
+        }
+    </style>
     @endif
+
+
     @livewireStyles
 
 </head>
@@ -104,7 +134,7 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="{{ route('user_home') }}" class="navbar-brand p-0">
-                <h2 class="m-0" style="color: #0f1e2d"><img class="logo" src="{{ asset('user/macedoors.png') }}"> Mace Doors</h2>
+                <h2 class="m-0" style="color: #0f1e2d"><img class="logo" src="{{ asset('user/macedoors.png') }}"></h2>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -187,16 +217,16 @@
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp">
         <div class="container">
             <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
+                {{-- <div class="col-lg-4 col-md-6 footer-about">
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                         <a href="{{ route('user_home') }}" class="navbar-brand">
                             <h1 class="m-0 text-white">Mace doors</h1>
                             <img class="logo bottom" src="{{ asset('user/macedoors.png') }}">
                         </a>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-lg-8 col-md-6">
-                    <div class="row gx-5">
+                    <div class="row gx-5 d-flex justify-content-center">
                         <div class="col-lg-4 col-md-12 pt-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">@lang('lang.get_in_touch')</h3>

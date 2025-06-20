@@ -233,6 +233,7 @@ return [
 
     'record_products' => 'Record Products',
 
+    'partners' => 'Partners',
 
 
 

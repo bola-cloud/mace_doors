@@ -102,7 +102,7 @@
     <livewire:user.items.horizontalslider-component />
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    {{-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5" style="direction:ltr;">
             <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
                 <h2 class="mb-0">{{ __('lang.what_clients_say') }}</h2>
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Testimonial End -->
 
     <!-- Why Choose Us Start -->
@@ -150,7 +150,7 @@
                 <h5 class="fw-bold text-primary text-uppercase">{{ __('lang.why_choose_us') }}</h5>
                 <h2 class="mb-0">{{ __('lang.grow_business') }}</h2>
             </div>
-            <div class="row g-5">
+            {{-- <div class="row g-5">
                 <div class="col-lg-4">
                     <div class="row g-5">
                         <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
@@ -192,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <livewire:user.items.seo-pargraph />
         </div>
     </div>
