@@ -81,6 +81,16 @@
 
   <div id='oopss'>
     <div id='error-text'>
+        @if (config('app.debug'))
+            <div style="background: #eee; padding: 20px; color: #000;">
+                <strong>Debug Info</strong><br>
+                <p><strong>Requested URL:</strong> {{ request()->fullUrl() }}</p>
+                <p><strong>Route Name:</strong> {{ \Route::currentRouteName() ?? 'N/A' }}</p>
+                <p><strong>Path:</strong> {{ request()->path() }}</p>
+                <p><strong>Controller:</strong> {{ optional(Route::getCurrentRoute())->getActionName() }}</p>
+            </div>
+        @endif
+
         <img src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg" alt="404">
         <span>404 PAGE</span>
         <p class="p-a">

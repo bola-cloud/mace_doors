@@ -1,8 +1,6 @@
 <div>
     <style>
-        .bg-primary {
-            background-color: #06a3da !important;
-        }
+
     </style>
 
     @section('title', __('lang.contact_us_title'))

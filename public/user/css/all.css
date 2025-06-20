@@ -150,7 +150,7 @@ text-align: justify;
         text-decoration: none;  /* Removes underline */
     }
     h5 {
-        color: white;
+        color: #0f1e2d !important;
     }
     @media (max-width: 970px) {
         img.img-fluid.w-100.rounded.mb-5 {
