@@ -8,9 +8,6 @@
             background: rgb(0 0 0 / 59%) !important;
             z-index: 1;
         }
-        .bg-primary {
-            background-color: #06a3da !important;
-        }
     </style>
 
     @section('title', __('lang.title_home'))
@@ -86,7 +83,7 @@
                                             {{ $lang == 'ar' ? $type->ar_name_type : $type->en_name_type }}
                                         </a>
                                     </div>
-                                    <div class="p-4" style="height: 220px;">
+                                    <div class="p-4 card-height" style="height: 220px;">
                                         <p>{{ $lang == 'ar' ? $type->ar_desc_3 : $type->en_desc_3 }}</p>
                                         <a class="btn btn-lg btn-primary rounded" href="{{ route('type_service_component', ['name' => $lang == 'ar' ? $service->ar_name_service : $service->en_name_service, 'name_type' => $lang == 'ar' ? $type->ar_name_type : $type->en_name_type]) }}">
                                             <i class="bi bi-arrow-right"></i>

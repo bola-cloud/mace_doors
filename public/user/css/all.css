@@ -4,9 +4,12 @@ p.mb-4 {
 }p {
     text-align: justify;
 }h2 {
-    color: #06a3da;
+    color: #0f1e2d !important;
 }p {
     text-align: justify;
+}
+.text-primary {
+    color: #0f1e2d !important;
 }
 .blog-item {
     width: 100%;
@@ -95,7 +98,7 @@ text-align: justify;
         text-align: justify;
     }
     h2 {
-        color: #06a3da;
+        color: #0f1e2d;
     }p {
         text-align: justify;
     }
@@ -104,7 +107,7 @@ text-align: justify;
         background-color: #06a3da;
         border-color: #badbcc;
     }h2 {
-        color: #06a3da;
+        color: #0f1e2d;
     }p {
         text-align: justify;
     }
@@ -190,7 +193,7 @@ text-align: justify;
         text-align: justify;
         margin: 44px;
     }h2 {
-        color: #06a3da;
+        color: #0f1e2d;
     }p {
         text-align: justify;
     }
@@ -220,11 +223,11 @@ text-align: justify;
     }
 
     h1, h2 {
-        color: #0044cc; /* IoT themed color */
+        color:#0f1e2d; /* IoT themed color */
     }
 
     h1, h2 {
-        color: #06a3d8;
+        color: #0f1e2d !important;
         font-family: 'Rubik';
     }
     h2 {
@@ -273,7 +276,7 @@ text-align: justify;
         margin-bottom: 20px; /* Adjust as needed */
     }
     h1, h2 {
-        color: #06a3d8;
+        color: #0f1e2d;
     }
     .item img {
         display: block;
@@ -379,7 +382,7 @@ text-align: justify;
     .home-fifth-cart-sec {
         position: relative;
     }
-  
+
     .sss {
         text-align: center;
         color: white;

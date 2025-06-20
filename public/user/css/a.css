@@ -26,7 +26,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.px-5.py-3.py-lg-0 {
     font-family: 'Nunito', sans-serif;
     position: relative;
     margin-left: 25px;
-    padding: 35px 0;
+    padding: 13px 0;
     color: #000000;
     font-size: 18px;
     font-weight: 600;
@@ -96,8 +96,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.px-5.py-3.py-lg-0 {
 }
 .float {
     position: fixed;
-    width: 67px;
-    height: 66px;
+    width: 53px;
+    height: 58px;
     bottom: 112px;
     right: 36px;
     background-color: #25d366;
@@ -108,7 +108,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.px-5.py-3.py-lg-0 {
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }a.float.call {
-    height: 66px;
+    height: 60px;
     bottom: 34px;
     right: 36px;
 }a.float.call {
@@ -131,4 +131,31 @@ nav.navbar.navbar-expand-lg.navbar-dark.px-5.py-3.py-lg-0 {
 	margin-top:16px;
 }a.btn.btn-lg.btn-primary.btn-lg-square.rounded.back-to-top {
     display: none;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    left: 45px;
+    right: auto;
+    bottom: 45px;
+    z-index: 99;
+}
+@media screen and (max-width: 768px) {
+
+    .card-height{
+        height: auto !important;
+    }
+    .blog-item.bg-light.rounded.overflow-hidden {
+        height: 337px !important;
+    }
+    .service-item {
+        height: 220px;
+    }
+
+}
+.btn-primary {
+    background-color: #0f1e2d !important;
+}
+.bg-primary {
+    background-color: #0f1e2d !important;
 }

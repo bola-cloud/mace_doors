@@ -58,13 +58,19 @@
                 <div class="blog-item bg-light rounded overflow-hidden" style="height: 500px;">
                     <div class="blog-img position-relative overflow-hidden" style="height: 300px;">
                         <img class="img-fluid" src="https://mpts-me.com/storage/services/{{ $product['img'] }}" alt="{{ $product['title'] }}" style="width: 100%; height: 100%; object-fit: cover;">
-                        <a href="https://mpts-me.com/serviceone/{{ $product['url'] }}" class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
-                            Record Product
+                        {{-- <a href="https://mpts-me.com/serviceone/{{ $product['url'] }}" class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
+                            {{ __('lang.record_products') }} <i class="bi bi-arrow-right"></i>
+                        </a> --}}
+                        <a href="#" class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4">
+                            {{ __('lang.record_products') }} <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                     <div class="p-4" style="height: 220px;">
                         <p>{{ $product['title'] }}</p>
-                        <a class="btn btn-lg btn-primary rounded" href="https://mpts-me.com/serviceone/{{ $product['url'] }}">
+                        {{-- <a class="btn btn-lg btn-primary rounded" href="https://mpts-me.com/serviceone/{{ $product['url'] }}">
+                            <i class="bi bi-arrow-right"></i>
+                        </a> --}}
+                        <a class="btn btn-lg btn-primary rounded" href="#">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>

@@ -15,7 +15,7 @@
     <meta property="og:description" content="Mace Doors leads the Middle East in revolving, sliding, and swing doors, gate barriers, and entrance automation. Trusted in Egypt, UAE, and beyond for innovative and reliable access control solutions.">
 
     <meta property="og:url" content="{{ canonical() }}">
-    <link rel="icon" href="{{asset("user/mace-logo.jpeg")}}">
+    <link rel="icon" href="{{asset("user/macedoors.png")}}">
 
     <link rel="preconnect" href="https://fonts.googleapis.c!--om">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -104,7 +104,7 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="{{ route('user_home') }}" class="navbar-brand p-0">
-                <h1 class="m-0" style="color: #0100fb"><img class="logo" src="{{ asset('user/mace-logo.jpeg') }}"> Mace Doors</h1>
+                <h2 class="m-0" style="color: #0f1e2d"><img class="logo" src="{{ asset('user/macedoors.png') }}"> Mace Doors</h2>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -191,7 +191,7 @@
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                         <a href="{{ route('user_home') }}" class="navbar-brand">
                             <h1 class="m-0 text-white">Mace doors</h1>
-                            <img class="logo bottom" src="{{ asset('user/mace-logo.jpeg') }}">
+                            <img class="logo bottom" src="{{ asset('user/macedoors.png') }}">
                         </a>
                     </div>
                 </div>
