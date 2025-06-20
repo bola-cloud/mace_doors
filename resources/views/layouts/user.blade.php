@@ -216,7 +216,7 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp">
         <div class="container">
-            <div class="row gx-5">
+            <div class="row gx-5 d-flex justify-content-center">
                 {{-- <div class="col-lg-4 col-md-6 footer-about">
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                         <a href="{{ route('user_home') }}" class="navbar-brand">
@@ -226,7 +226,7 @@
                     </div>
                 </div> --}}
                 <div class="col-lg-8 col-md-6">
-                    <div class="row gx-5 d-flex justify-content-center">
+                    <div class="row gx-5 ">
                         <div class="col-lg-4 col-md-12 pt-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">@lang('lang.get_in_touch')</h3>
